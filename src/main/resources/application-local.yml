@@ -1,0 +1,24 @@
+spring:
+    application:
+        name: springbootllm
+    ai:
+      google:
+        genai:
+          api-key: ${GOOLE_GENAI_API_KEY}
+          chat:
+            options:
+              model: gemini-2.5-flash
+              temperature: 0.7
+              max-tokens: 1024
+              top-p: 0.9
+              frequency-penalty: 0.0
+              presence-penalty: 0.0
+              google-search-retrieval: false
+logging:
+  level:
+    root: info
+    sun.rmi: warn
+    javax.management: warn
+    org.springframework.web: debug
+    org.hibernate: warn
+    org.springframework.ai: debug
