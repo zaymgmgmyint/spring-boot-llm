@@ -34,4 +34,6 @@ build/
 
 ### ENV files ###
 .env
-.env.yml
+.env.*
+env.yml
+*.env
